@@ -1,0 +1,81 @@
+[
+    {
+      "id": 1,
+      "bookName": "The Book Of Life",
+      "author": "George Orwell",
+      "image": "https://i.ibb.co/MGmJN65/97cd56f19ff86dfe027ecac5cb1ba5cf.jpg",
+      "review": "A haunting portrayal of a dystopian society where individuality is suppressed and truth is manipulated, 1984 remains a timeless masterpiece that resonates with readers across generations.",
+      "totalPages": 328,
+      "rating": 4.5,
+      "category": "Fiction",
+      "tags": ["Dystopian", "Political", "Classic"],
+      "publisher": "Signet Classics",
+      "yearOfPublishing": 1949
+    },
+    {
+      "id": 2,
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://i.ibb.co/2jHbk2B/a-copy-of-harper-lees-to-kill-a-mockingbird-the-book-is-on-many-schools-banned-books-lists-in-the-us.jpg",
+      "review": "An unforgettable story of racial injustice and moral growth, To Kill a Mockingbird continues to inspire readers with its powerful themes and memorable characters.",
+      "totalPages": 336,
+      "rating": 4.8,
+      "category": "Fiction",
+      "tags": ["Coming of Age", "Legal", "Classic"],
+      "publisher": "Harper Perennial Modern Classics",
+      "yearOfPublishing": 1960
+    },
+    {
+      "id": 3,
+      "bookName": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://i.ibb.co/dWmwrCj/81a-Ypgo-QPFL-AC-UF350-350-QL80.jpg",
+      "review": "A dazzling portrait of the Jazz Age, The Great Gatsby explores themes of love, wealth, and the elusive American Dream with stunning prose and unforgettable characters.",
+      "totalPages": 180,
+      "rating": 4.6,
+      "category": "Fiction",
+      "tags": ["Romance", "Drama", "Classic"],
+      "publisher": "Scribner",
+      "yearOfPublishing": 1925
+    },
+    {
+      "id": 4,
+      "bookName": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image": "https://i.ibb.co/THH6Vfn/1918-3.webp",
+      "review": "A timeless coming-of-age novel, The Catcher in the Rye continues to resonate with readers for its poignant exploration of adolescence, identity, and alienation.",
+      "totalPages": 224,
+      "rating": 4.5,
+      "category": "Fiction",
+      "tags": ["Coming of Age", "Young Adult", "Classic"],
+      "publisher": "Back Bay Books",
+      "yearOfPublishing": 1951
+    },
+    {
+      "id": 5,
+      "bookName": "Gone Girl",
+      "author": "Gillian Flynn",
+      "image": "https://i.ibb.co/RHX6cyg/posiano-1.jpg",
+      "review": "A gripping psychological thriller, Gone Girl keeps readers on the edge of their seats with its twists and turns, making it an unforgettable journey into the dark complexities of marriage and deception.",
+      "totalPages": 432,
+      "rating": 4.4,
+      "category": "Mystery",
+      "tags": ["Thriller", "Suspense", "Psychological"],
+      "publisher": "Broadway Books",
+      "yearOfPublishing": 2012
+    },
+    {
+      "id": 6,
+      "bookName": "The Handmaid's Tale",
+      "author": "Margaret Atwood",
+      "image": "https://i.ibb.co/DfzLWhG/images-7.jpg",
+      "review": "A harrowing vision of a dystopian society, The Handmaid's Tale remains a chilling warning against the dangers of totalitarianism and the erosion of human rights.",
+      "totalPages": 311,
+      "rating": 4.6,
+      "category": "Science Fiction",
+      "tags": ["Dystopian", "Feminism", "Classic"],
+      "publisher": "Anchor",
+      "yearOfPublishing": 1985
+    }
+  ]
+  
