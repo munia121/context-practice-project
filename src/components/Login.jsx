@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 
 const Login = () => {
-    const {loginForm} = useContext(bookContext)
+    const {loginForm, googleLogin,setUser} = useContext(bookContext)
     const navigate = useNavigate()
 
     const handleLoginSubmit = (e) => {
@@ -25,6 +25,13 @@ const Login = () => {
         .catch(error =>{
             console.log(error)
         })
+    }
+
+
+    const handleGoogle = () =>{
+        googleLogin()
+        .then(result=>setUser(result.user))
+        .then(error=>console.log(error))
     }
 
 
@@ -55,6 +62,7 @@ const Login = () => {
                         <div className="form-control mt-6">
                             <button className="btn btn-primary">Login</button>
                         </div>
+                        <p onClick={handleGoogle} className="text-sky-600 underline">Google</p>
                     </form>
                 </div>
             </div>

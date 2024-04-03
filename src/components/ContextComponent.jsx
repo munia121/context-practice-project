@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import auth from "./firebase.config";
 
@@ -8,21 +8,11 @@ import auth from "./firebase.config";
 export const bookContext = createContext()
 const ContextComponent = ({ children }) => {
 
-    const [userData, setUserData] = useState([]);
-    const [morePages, setMorePages] = useState([])
+   
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
 
-    useEffect(() => {
-        fetch('/data.json')
-            .then(res => res.json())
-        .then(data => {
-            setUserData(data)
-            const morePage = [...data].sort((a,b) =>b.totalPages - a.totalPages)
-            setMorePages(morePage)
-        })
-    }, [])
-
+    
     // register
     const createRegister = (email, password) =>{
         return createUserWithEmailAndPassword(auth, email, password)
@@ -36,6 +26,13 @@ const ContextComponent = ({ children }) => {
     // sign out
     const logOut = () =>{
         return signOut(auth)
+    }
+
+
+    // google provider
+    const googleProvider = new  GoogleAuthProvider()
+    const googleLogin = () =>{
+        signInWithPopup(auth, googleProvider)
     }
 
 
@@ -57,7 +54,7 @@ const ContextComponent = ({ children }) => {
 
 
     // console.log(morePages)
-    const passValue = { user, userData,morePages,createRegister, loginForm, logOut, setLoading,loading }
+    const passValue = { user,setUser,createRegister, loginForm, logOut, setLoading,loading, googleLogin }
 
     return (
         <div>

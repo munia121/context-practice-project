@@ -7,7 +7,8 @@ const NavBar = () => {
 
     const navLink = <>
         <NavLink className={({isActive}) => isActive? 'text-[#23BE0A] border border-[#23BE0A] font-bold  rounded-md ' : 'font-bold text-black'} to={'/'}><li><button className="btn">All Books</button></li></NavLink>
-        <NavLink className={({isActive}) => isActive? 'text-[#23BE0A] border border-[#23BE0A] font-bold  rounded-md ' : 'font-bold text-black'} to={'/topBook'}><li> <button className="btn">Top Book</button> </li></NavLink>
+        <NavLink className={({isActive}) => isActive? 'text-[#23BE0A] border border-[#23BE0A] font-bold  rounded-md ' : 'font-bold text-black'} ><li> <button className="btn">Top Book</button> </li></NavLink>
+        <button>About</button>
 
     </>
 
